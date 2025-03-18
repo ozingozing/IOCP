@@ -1,0 +1,7 @@
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/alloc.obj
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/async.obj
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/hiredis.obj
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/net.obj
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/read.obj
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/sds.obj
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/sockcompat.obj

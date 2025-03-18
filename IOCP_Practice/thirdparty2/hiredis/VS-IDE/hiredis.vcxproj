@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{185F6DBA-B83F-3E38-9CED-643409FDD745}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>hiredis</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hiredis.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hiredisd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hiredis.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hiredis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hiredis.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hiredis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hiredis.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hiredis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Debug";hiredis_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Debug\";hiredis_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -E __create_def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/Debug/exports.def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/Debug/hiredisd.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/Debug/hiredisd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";hiredis_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\";hiredis_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -E __create_def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/Release/exports.def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/Release/hiredis.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/Release/hiredis.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";hiredis_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\";hiredis_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -E __create_def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/exports.def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/MinSizeRel/hiredis.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/MinSizeRel/hiredis.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="RelWithDebInfo";hiredis_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"RelWithDebInfo\";hiredis_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\CPPTest\IOCP_Practice\thirdparty2\hiredis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -E __create_def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/RelWithDebInfo/exports.def E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/RelWithDebInfo/hiredis.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/hiredis.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/RelWithDebInfo/hiredis.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -SE:/CPPTest/IOCP_Practice/thirdparty2/hiredis -BE:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE --check-stamp-file E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeRCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeSystem.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis-config.cmake.in;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis.pc.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPack.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPackComponent.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -SE:/CPPTest/IOCP_Practice/thirdparty2/hiredis -BE:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE --check-stamp-file E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeRCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeSystem.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis-config.cmake.in;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis.pc.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPack.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPackComponent.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -SE:/CPPTest/IOCP_Practice/thirdparty2/hiredis -BE:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE --check-stamp-file E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeRCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeSystem.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis-config.cmake.in;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis.pc.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPack.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPackComponent.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\bin\cmake.exe -SE:/CPPTest/IOCP_Practice/thirdparty2/hiredis -BE:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE --check-stamp-file E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeRCCompiler.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\3.30.8\CMakeSystem.cmake;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis-config.cmake.in;E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis.pc.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCCompilerABI.c;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeRCInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystem.cmake.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPack.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CPackComponent.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\GNUInstallDirs.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\Windows.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;E:\cmake-3.30.8-windows-x86_64\cmake-3.30.8-windows-x86_64\share\cmake-3.30\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\alloc.c" />
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\async.c" />
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\hiredis.c" />
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\net.c" />
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\read.c" />
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\sds.c" />
+    <ClCompile Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\sockcompat.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\CPPTest\IOCP_Practice\thirdparty2\hiredis\VS-IDE\ZERO_CHECK.vcxproj">
+      <Project>{376EE67E-CAE7-396A-B888-7BE55749900A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

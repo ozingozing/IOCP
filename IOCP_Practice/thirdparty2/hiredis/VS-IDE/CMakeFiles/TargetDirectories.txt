@@ -1,0 +1,7 @@
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/hiredis.dir
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/hiredis-test.dir
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/PACKAGE.dir
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/RUN_TESTS.dir
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/INSTALL.dir
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/ALL_BUILD.dir
+E:/CPPTest/IOCP_Practice/thirdparty2/hiredis/VS-IDE/CMakeFiles/ZERO_CHECK.dir

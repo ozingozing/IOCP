@@ -5,8 +5,7 @@
 
 #pragma comment(lib, "Ws2_32.lib")
 
-#define SERVER_IP "127.0.0.1"
-#define SERVER_PORT 5150
+#define MAX_SEND_COUNT 5  // 보낼 메시지 개수
 
 int main(int argc, char** argv)
 {
@@ -21,9 +20,10 @@ int main(int argc, char** argv)
         printf("Usage: %s <ServerIp> <Port>\n", argv[0]);
         return 1;
     }
+
     // IP 주소와 포트 번호 가져오기
-    const char* serverIP = argv[1];         // 첫 번째 인자: 서버 IP
-    int serverPort = atoi(argv[2]);         // 두 번째 인자: 포트 (문자열 → 정수 변환)
+    const char* serverIP = argv[1];
+    int serverPort = atoi(argv[2]);
 
     // WinSock 초기화
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)
@@ -60,16 +60,37 @@ int main(int argc, char** argv)
 
     printf("Connected to server!\n");
 
-    // 데이터 전송
-    const char* message = "Hello World Server!!!!!!!";
-    send(clientSocket, message, (int)strlen(message), 0);
-
-    // 서버 응답 받기
-    bytesReceived = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
-    if (bytesReceived > 0)
+    // 다중 send() 요청 보내기
+    for (int i = 0; i < MAX_SEND_COUNT; i++)
     {
-        buffer[bytesReceived] = '\0';
-        printf("Server Response: %s\n", buffer);
+        char message[256];
+        snprintf(message, sizeof(message), "Hello Server! Message %d", i + 1);
+
+        int sentBytes = send(clientSocket, message, (int)strlen(message), 0);
+        if (sentBytes == SOCKET_ERROR)
+        {
+            printf("Send failed: %d\n", WSAGetLastError());
+            break;
+        }
+        printf("Sent: %s\n", message);
+
+        // 서버 응답 받기
+        bytesReceived = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
+        if (bytesReceived > 0)
+        {
+            buffer[bytesReceived] = '\0';
+            printf("Server Response: %s\n", buffer);
+        }
+        else if (bytesReceived == 0)
+        {
+            printf("Server closed connection\n");
+            break;
+        }
+        else
+        {
+            printf("recv failed: %d\n", WSAGetLastError());
+            break;
+        }
     }
 
     // 소켓 닫기

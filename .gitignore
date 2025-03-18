@@ -1,0 +1,20 @@
+# Visual Studio 관련
+.vs/
+
+# 빌드된 실행 파일 및 중간 파일
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.ipch
+*.log
+*.sdf
+*.tlog
+*.idb
+*.suo
+*.ncb
+
+# 빌드된 폴더 (Debug, Release)
+Debug/
+Release/
+x64/
