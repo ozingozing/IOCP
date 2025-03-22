@@ -44,6 +44,12 @@ public:
 		return 0;
 	}
 
+	void EnterRoom(INT32 roomIndex_)
+	{
+		mRoomIndex = roomIndex_;
+		mCurDomainState = DOMAIN_STATE::ROOM;
+	}
+
 	void SetDomainState(DOMAIN_STATE value_) { mCurDomainState = value_; }
 
 	INT32 GetCurrentRoom() { return mRoomIndex; }

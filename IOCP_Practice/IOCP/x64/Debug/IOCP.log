@@ -1,2 +1,7 @@
 ﻿  PacketManager.cpp
+  main.cpp
+E:\CPPTest\IOCP_Practice\IOCP\ClientInfo.h(28,43): warning C4805: '==': 연산에 'INT64' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
   IOCP.vcxproj -> E:\CPPTest\IOCP_Practice\x64\Debug\IOCP.exe

@@ -59,9 +59,12 @@ enum class  PACKET_ID : UINT16
 
 	ROOM_ENTER_REQUEST = 206,
 	ROOM_ENTER_RESPONSE = 207,
+	ROOM_NEW_USER_NTF = 208,
+	ROOM_USER_LIST_NTF = 209,
 
 	ROOM_LEAVE_REQUEST = 215,
 	ROOM_LEAVE_RESPONSE = 216,
+	ROOM_LEAVE_USER_NTF = 217,
 
 	ROOM_CHAT_REQUEST = 221,
 	ROOM_CHAT_RESPONSE = 222,
@@ -110,6 +113,28 @@ struct ROOM_ENTER_RESPONSE_PACKET : public PACKET_HEADER
 	//char RivalUserID[MAX_USER_ID_LEN + 1] = { 0, };
 };
 
+// 사용자 정보를 담을 구조체 정의
+struct UserInfo
+{
+	int64_t userUniqueId = 0; // UserUniqueId (64비트)
+	BYTE idLen = 0;           // UserID 길이 (1바이트)
+	char userID[MAX_USER_ID_LEN + 1] = { 0, }; // UserID (최대 크기)
+};
+
+#define MAX_USER_COUNT 100 // 최대 사용자 수
+struct ROOM_USER_LIST_NTIFY : public PACKET_HEADER
+{
+	BYTE userCnt = 0;                 // 사용자 수
+	UserInfo userList[MAX_USER_COUNT]; // 사용자 정보 배열
+};
+
+struct ROOM_ENTER_NEW_USER_NOTIFY : public PACKET_HEADER
+{
+	int64_t UserUniqueId;
+	BYTE UserIDLen;
+	char UserID[MAX_USER_ID_LEN + 1] = { 0, };
+};
+
 
 //- 룸 나가기 요청
 struct ROOM_LEAVE_REQUEST_PACKET : public PACKET_HEADER
@@ -119,6 +144,11 @@ struct ROOM_LEAVE_REQUEST_PACKET : public PACKET_HEADER
 struct ROOM_LEAVE_RESPONSE_PACKET : public PACKET_HEADER
 {
 	INT16 Result;
+};
+
+struct ROOM_LEAVE_USER_NOTIFY :public PACKET_HEADER
+{
+	int64_t UserUniqueId;
 };
 
 // 룸 채팅
